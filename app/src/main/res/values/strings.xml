@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">TamboLocales</string>
+    <string name="login_subtitle">Sistema de control de tiendas a nivel nacional.</string>
+    <string name="label_correo">Correo</string>
+    <string name="hint_correo">name@example.com</string>
+    <string name="label_clave">Clave</string>
+    <string name="hint_clave">••••••••</string>
+    <string name="btn_ingresar">INGRESAR</string>
+    <string name="btn_recuperar_clave">RECUPERAR CONTRASEÑA</string>
+    <string name="login_error_credentials">Credenciales incorrectas. Verifique su correo y clave.</string>
+    <string name="login_error_email_format">Ingrese un correo válido.</string>
+    <string name="login_error_password_empty">La clave no puede estar vacía.</string>
+    <string name="dialog_recover_title">Recuperar contraseña</string>
+    <string name="dialog_recover_message">Se ha enviado una instrucción de recuperación al correo ingresado.</string>
+    <string name="dialog_recover_ok">Entendido</string>
+
+    <string name="control_title">Control de locales</string>
+    <string name="btn_google_maps">GOOGLE MAPS</string>
+    <string name="btn_mantenedor">MANTENEDOR</string>
+
+    <string name="locales_header">Locales</string>
+    <string name="empty_locales">No hay locales registrados</string>
+    <string name="label_horario_atencion">Horario de atención:</string>
+    <string name="label_horario">Horario:</string>
+    <string name="label_gerente">Gerente:</string>
+
+    <string name="dialog_registro_title">Registro local</string>
+    <string name="label_local">Local:</string>
+    <string name="label_direccion">Dirección:</string>
+    <string name="label_atencion">Atención:</string>
+    <string name="label_hora">Hora:</string>
+    <string name="label_coordenadas">Coordenadas:</string>
+    <string name="hint_coordenadas">lat, lon (ej. -12.0705, -77.0510)</string>
+    <string name="hint_nombre_local">ej. TAMBO BENAVIDES</string>
+    <string name="hint_gerente">ej. Juan Pérez</string>
+    <string name="hint_direccion">ej. Av. Benavides 1234, Surco</string>
+    <string name="hint_atencion">Lunes a domingo</string>
+    <string name="hint_hora">07:00 - 23:00</string>
+    <string name="btn_registrar">REGISTRAR</string>
+    <string name="error_campo_requerido">Campo requerido</string>
+    <string name="error_coordenadas_invalidas">Coordenadas inválidas (-90..90, -180..180)</string>
+
+    <string name="map_all_title">¡Busca tu local más cercano!</string>
+    <string name="tambo_prefix">Tambo: %1$s</string>
+    <string name="gerente_format">Gerente: %1$s</string>
+    <string name="horario_atencion_format">Horario de atención: %1$s</string>
+    <string name="horario_format">Horario: %1$s</string>
+</resources>

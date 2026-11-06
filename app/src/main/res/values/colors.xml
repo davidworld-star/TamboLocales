@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="tambo_purple">#A3198C</color>
+    <color name="tambo_yellow">#F9D71C</color>
+    <color name="tambo_card">#FBE382</color>
+
+    <color name="gray_border">#CCCCCC</color>
+    <color name="gray_bg">#F5F5F5</color>
+    <color name="semi_transparent_white">#EEFFFFFF</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_secondary">#555555</color>
+    <color name="red_error">#D32F2F</color>
+</resources>

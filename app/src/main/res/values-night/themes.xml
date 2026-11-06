@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Forced light theme even in night mode -->
+    <style name="Base.Theme.TamboLocales" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/tambo_purple</item>
+        <item name="colorSecondary">@color/tambo_yellow</item>
+        <item name="android:statusBarColor">@color/tambo_purple</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

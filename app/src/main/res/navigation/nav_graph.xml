@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tecsup.tambolocales.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tecsup.tambolocales.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_controlFragment"
+            app:destination="@id/controlFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/controlFragment"
+        android:name="com.tecsup.tambolocales.ui.control.ControlFragment"
+        android:label="ControlFragment"
+        tools:layout="@layout/fragment_control">
+        <action
+            android:id="@+id/action_controlFragment_to_localesFragment"
+            app:destination="@id/localesFragment" />
+        <action
+            android:id="@+id/action_controlFragment_to_mapaLocalesFragment"
+            app:destination="@id/mapaLocalesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/localesFragment"
+        android:name="com.tecsup.tambolocales.ui.locales.LocalesFragment"
+        android:label="LocalesFragment"
+        tools:layout="@layout/fragment_locales">
+        <action
+            android:id="@+id/action_localesFragment_to_mapaLocalFragment"
+            app:destination="@id/mapaLocalFragment" />
+        <action
+            android:id="@+id/action_localesFragment_to_registroLocalDialogFragment"
+            app:destination="@id/registroLocalDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapaLocalesFragment"
+        android:name="com.tecsup.tambolocales.ui.maps.MapaLocalesFragment"
+        android:label="MapaLocalesFragment"
+        tools:layout="@layout/fragment_mapa_locales">
+        <action
+            android:id="@+id/action_mapaLocalesFragment_to_registroLocalDialogFragment"
+            app:destination="@id/registroLocalDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapaLocalFragment"
+        android:name="com.tecsup.tambolocales.ui.maps.MapaLocalFragment"
+        android:label="MapaLocalFragment"
+        tools:layout="@layout/fragment_mapa_local">
+        <argument
+            android:name="localId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/registroLocalDialogFragment"
+        android:name="com.tecsup.tambolocales.ui.locales.RegistroLocalDialogFragment"
+        android:label="RegistroLocalDialogFragment"
+        tools:layout="@layout/dialog_registro_local">
+        <argument
+            android:name="coordenadas"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+</navigation>
